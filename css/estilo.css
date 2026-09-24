@@ -1,0 +1,159 @@
+header img {
+    height: 70px;
+    width: 70px;
+}
+
+main {
+    min-height: 800px;
+}
+
+#section-banners {
+    padding: 0;
+}
+
+#section-banners img {
+    height: 500px;
+    object-fit: cover;
+}
+
+#section-vendidos {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#section-vendidos h2, #novidades h2, #galeria h2 {
+    font-weight: bold;
+    padding: 20px;
+}
+
+#section-vendidos img {
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#section-vendidos .card {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#section-vendidos .preco {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#novidades {
+    text-align: center;
+    padding: 20px;
+}
+
+.novidades-box {
+    display: flex;
+    gap: 15px;
+}
+
+.novidades-box div {
+    flex: 1;
+    padding: 25px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+#galeria {
+    text-align: center;
+    padding: 20px;
+}
+
+.galeria {
+    display: flex;
+    gap: 10px;
+}
+
+.galeria img {
+    width: 33.33%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: #212529;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0;
+}
+
+#voltar-topo {
+    position: fixed;
+    bottom: 5px;
+    right: 50px;
+}
+
+#section-login {
+    margin-top: 100px;
+}
+
+#section-login h1 {
+    text-align: center;
+}
+
+#section-login input {
+    width: 100%;
+}
+
+#section-login form, #form-cadastrar form {
+    width: 400px;
+}
+
+#section-cadastro {
+    padding: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#form-cadastrar {
+    padding: 50px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #section-banners img {
+        height: 300px;
+    }
+
+    .card-group {
+        display: block;
+    }
+
+    .novidades-box, .galeria {
+        display: block;
+    }
+
+    .novidades-box div {
+        margin-bottom: 10px;
+    }
+
+    .galeria img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #section-login form, #form-cadastrar form {
+        width: 90%;
+    }
+
+    #voltar-topo {
+        right: 10px;
+    }
+}
